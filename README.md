@@ -4,7 +4,7 @@ Welcome to my **DSA (Data Structures & Algorithms)** repository! 🚀 This is wh
 
 ## 🚀 How to Use
 - Clone the repository:
-  git clone https://github.com/your-username/dsa-practice.git
+  git clone https://github.com/annpurna-jha/DSA
 - Browse through the files to explore different problems and solutions.
 
 ## 📈 Progress
