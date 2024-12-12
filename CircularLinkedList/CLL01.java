@@ -47,8 +47,11 @@ public class CLL01 {
         if(head==head.next)
             head=tail=null;
         else{
-            head=head.next;
-            tail.next=head;
+            Node prev = head.next;
+            while(prev.next!=head) prev = prev.next;
+            prev.next = head.next;
+            head = prev.next;
+            tail = prev;
         }
         size--;
         return val;
@@ -87,7 +90,7 @@ public class CLL01 {
             System.out.print(curr.data+"->");
             curr=curr.next;
         }while(curr!=head);
-        System.out.println(head.data);
+        System.out.println();
     }
     public static void main(String[] args) {
         CLL01 cll = new CLL01();
@@ -98,11 +101,13 @@ public class CLL01 {
         cll.addFirst(3);
         cll.addLast(7);
         cll.print();
-        // System.out.println(cll.size);
+        // System.out.println(size);
+        cll.print();
         cll.removeFirst();
+        cll.print();
         cll.removeLast();
         cll.print();
-        // System.out.println(cll.size);
+        // System.out.println(size);
     }
     
 }
