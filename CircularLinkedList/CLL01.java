@@ -80,6 +80,20 @@ public class CLL01 {
 
     }
 
+    public void reverse(){
+        if(head == null||head.next ==  head ) return;
+        Node curr = head.next, prev=head, next;
+        prev.next = null;
+        while(curr!=head){
+            next = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = next;
+        }
+        head.next = prev;
+        head = prev;
+    }
+
     public void print(){
         if(head==null){
             System.out.println("null");
@@ -103,8 +117,9 @@ public class CLL01 {
         cll.print();
         // System.out.println(size);
         cll.print();
-        cll.removeFirst();
+        cll.reverse();
         cll.print();
+        cll.removeFirst();
         cll.removeLast();
         cll.print();
         // System.out.println(size);
