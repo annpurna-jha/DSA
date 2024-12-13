@@ -1,4 +1,3 @@
-package CircularLinkedList;
 public class CLL01 {
     class Node{
         int data;

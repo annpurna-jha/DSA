@@ -1,3 +1,5 @@
+package LinkedList;
+
 public class LL16 {
     public static class Node{
         int data;

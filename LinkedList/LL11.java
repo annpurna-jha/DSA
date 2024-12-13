@@ -1,3 +1,4 @@
+package LinkedList;
 // reverse linkedlist
 public class LL11 {
         public static class Node{
@@ -11,6 +12,7 @@ public class LL11 {
         public static Node head; 
         public static Node tail;
         public static int size;
+
     //add first
     public void addFirst(int data){
         Node newNode = new Node(data);
@@ -22,8 +24,7 @@ public class LL11 {
         newNode.next = head;
         head = newNode;
     }
-
-    
+     
      // print
      public void print(){
         if(head==null) {

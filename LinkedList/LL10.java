@@ -89,7 +89,7 @@ public class LL10 {
         ll.addLast(3);
         ll.add(3,7);
         ll.print();
-        System.out.println(ll.size); 
+        System.out.println(size); 
         System.out.println(ll.recSearch(8));
         System.out.println(ll.recSearch(3));
         

@@ -108,11 +108,11 @@ public class DLL01 {
         dll.addFirst(6);
         dll.addLast(1);
         dll.print();
-        System.out.println(dll.size);
+        System.out.println(size);
         dll.removeFirst();
         dll.removeLast();
         dll.print();
-        System.out.println(dll.size);
+        System.out.println(size);
     }
 
 }

@@ -1,3 +1,5 @@
+package LinkedList;
+
 public class LL12 {
     // remove nth node from end
     public static class Node{

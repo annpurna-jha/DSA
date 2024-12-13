@@ -1,5 +1,4 @@
 package LinkedList;
-
 public class LL01 {
     // creating a self defined type to store Node i.e class
     public static class Node{
@@ -19,9 +18,8 @@ public class LL01 {
     public static Node head; 
     public static Node tail;
     public static void main(String[] args) {
-        LL01 ll = new LL01();
-        ll.head = new Node(2);
-        ll.head.next = new Node(3);
+        head = new Node(2);
+        head.next = new Node(3);
         
     }
 }
